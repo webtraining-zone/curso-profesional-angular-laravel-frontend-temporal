@@ -12,6 +12,8 @@ import { SingleProjectComponent } from './public/projects/single-project/single-
 import {HttpClientModule} from '@angular/common/http';
 import {httpInterceptorProviders} from './common/interceptors';
 import { FixImageUrlPipe } from './common/pipes/fix-image-url.pipe';
+import { GetFieldByLocalePipe } from './common/pipes/get-field-by-locale.pipe';
+import { AuthHomeComponent } from './auth/home/auth-home/auth-home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FixImageUrlPipe } from './common/pipes/fix-image-url.pipe';
     FullBannerComponent,
     ProjectsComponent,
     SingleProjectComponent,
-    FixImageUrlPipe
+    FixImageUrlPipe,
+    GetFieldByLocalePipe,
+    AuthHomeComponent
   ],
   imports: [
     BrowserModule,

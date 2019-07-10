@@ -18,11 +18,11 @@
         <div class="media-content">
           <p class="b-project__title title is-4">
             <a class="b-project__title-link" routerLink="/projects/{{project.slug}}">
-              {{project.title}}
+              {{project | getFieldByLocale:'title'}}
             </a>
           </p>
           <p class="b-project__description subtitle is-6">
-            <!--{{ project}}-->
+            {{ project | getFieldByLocale:'description'}}
           </p>
         </div>
       </div>
